@@ -1,6 +1,6 @@
 #!/bin/bash
 
-clear;
+clear; 
 
 ##### Display banner #####
 echo -e "\n\e[1;31m#################################\e[0m";
@@ -16,7 +16,7 @@ friday_flag=0;
 last_array=();
 next_array=();
 
-##### Today's date #####
+##### Print Today's date and message #####
 if [[ $date_today -eq 13 ]]
 then
         if [[ $weeday -eq 5 ]]
@@ -88,6 +88,7 @@ echo -e "\t   \e[1;31m${last_array[2]}\e[0m";
 echo -e "\t   \e[1;31m${last_array[1]}\e[0m";
 echo -e "\t   \e[1;31m${last_array[0]}\e[0m";
 
+##### Print Today's date again #####
 if [[ $friday_flag -eq 1 ]]
 then
         echo -e "\t-- \e[1;31m`date +%d-%b-%Y`\e[0m --";
