@@ -19,7 +19,7 @@ next_array=();
 ##### Print Today's date and message #####
 if [[ $date_today -eq 13 ]]
 then
-        if [[ $weeday -eq 5 ]]
+        if [[ $weekday -eq 5 ]]
         then
                 echo -e "\nIt's \e[1;31m`date \"+%a %d %b %Y\"`\e[0m today. Ohh God! Another \e[1;31mFriday-The-13th\e[0m.";
                 friday_flag=1;
