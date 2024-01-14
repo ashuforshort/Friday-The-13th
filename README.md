@@ -1,10 +1,21 @@
 # Friday-The-13th
-Bash script to calculate last and next six Friday-The-13ths from the date of script execution.
+A small Python program to show some of the previous and upcoming Friday-The-13ths starting today.
 
-## How to run?
+## Installation
+
+```console
+# clone the repo
+$ git clone https://github.com/ashuforshort/Friday-The-13th.git
+
+# change the working directory to Friday-The-13th
+$ cd Friday-The-13th
+
+# install the requirements
+$ python3 -m pip install -r requirements.txt
 ```
-[ user@hostname /home/user] $ chmod +x Friday-The-13th.sh
-```
-```
-[ user@hostname /home/user] $ ./Friday-The-13th.sh
+
+## Usage
+
+```console
+$ python3 Friday-The-13th.py
 ```
