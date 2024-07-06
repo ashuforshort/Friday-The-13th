@@ -4,15 +4,18 @@
 
 </div>
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://friday-the-13th.streamlit.app)
+
 # Friday-The-13th
 A simple code to see previous and upcoming Friday-The-13ths from a specific date.
-
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://friday-the-13th.streamlit.app)
 
 ## 💻 Requirements
 
 ### Python version
 * <strong>3.10</strong> and above
+
+### Docker Hub image
+* [ashuforshort/fridaythe13th](https://hub.docker.com/r/ashuforshort/fridaythe13th/tags)
 
 ## ⚙️ Installation
 
