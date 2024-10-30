@@ -21,7 +21,7 @@ A simple code to see previous and upcoming Friday-The-13ths from a specific date
 
 | | Commands |
 | - | - |
-| Python | `pip3 install bs4 datetime streamlit` |
+| Python | `pip3 install datetime streamlit` |
 || or `pip3 install -r requirements.txt` |
 || then `streamlit run Friday-The-13th.py` |
 | Docker | `docker run -p 8501:8501 -d ashuforshort/fridaythe13th` |
