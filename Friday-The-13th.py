@@ -1,19 +1,19 @@
-import ssl
+#import ssl
+#import urllib.request as url
+#from bs4 import BeautifulSoup
 import streamlit as st
-import urllib.request as url
-from bs4 import BeautifulSoup
 from datetime import date, datetime
 from dateutil.relativedelta import relativedelta
 
-unverified_ssl_context = ssl._create_unverified_context()
-f13_wikipedia_content = url.urlopen('https://en.wikipedia.org/wiki/Friday_the_13th',context=unverified_ssl_context)
-soup = BeautifulSoup(f13_wikipedia_content,'html.parser')
-all_p_tags = soup.find_all('p')
-for i in all_p_tags:
-        paragraph = i.get_text()
-        if "until" in paragraph:
-                paragraph = paragraph.replace("(refresh)","")
-                break
+#unverified_ssl_context = ssl._create_unverified_context()
+#f13_wikipedia_content = url.urlopen('https://en.wikipedia.org/wiki/Friday_the_13th',context=unverified_ssl_context)
+#soup = BeautifulSoup(f13_wikipedia_content,'html.parser')
+#all_p_tags = soup.find_all('p')
+#for i in all_p_tags:
+#        paragraph = i.get_text()
+#        if "until" in paragraph:
+#                paragraph = paragraph.replace("(refresh)","")
+#                break
 
 st.set_page_config(
         page_title="Friday-The-13th",
@@ -31,7 +31,7 @@ st.sidebar.image("Friday-The-13th-Logo.jpg")
 st.write(":open_book: \"Friday-The-13th\" is considered an unlucky day in Western superstition.")
 st.write(":open_book: It occurs when the 13th day of the month in the Gregorian calendar falls on a Friday.")
 st.write(":open_book: A month has a Friday-The-13th if and only if it begins on a Sunday.")
-st.write(f":open_book: :red[{paragraph}]")
+#st.write(f":open_book: :red[{paragraph}]")
 wiki_url = "https://en.wikipedia.org/wiki/Friday_the_13th"
 st.write("*[Source: Wikipedia] [Friday the 13th](%s)*" % wiki_url)
 
